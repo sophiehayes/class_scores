@@ -1,6 +1,6 @@
 ##
 ## class_scores.py
-# sophie
+# sophie the lord
 # 02/03/2023
 
 # lsits
