@@ -4,6 +4,7 @@
 # 02/03/2023
 
 # funtion for input
+
 def user_input (user_score):
     '''
     user input to list
@@ -11,6 +12,15 @@ def user_input (user_score):
     combined_list.append(user_score)
 
     return user_score
+
+def user_modify (number, insert):
+    '''
+    user modifys value in list
+    '''
+    combined_list.insert(number, insert)
+
+    return number, insert
+    
         
     
 # lits
@@ -24,6 +34,27 @@ combined_list = class_a + class_b
 # get user to add score and calc inside funtion
 user_score = float(input("what score did you get? "))
 user_input(user_score)
+
+# print list
+print(combined_list)
+
+# get user to modify a value in list
+user_choice = input("would you like to change a value in the list (y/n)? ").strip().lower()
+if user_choice == "y":
+    number = int(input("which number on the list is the value, count from 0: "))
+else :
+    print("wtf")
+
+# get the insert variable
+insert = int(input("what value would you like to add?"))
+
+# call funtion and print new list
+user_modify(number, insert)
+print(combined_list)
+
+
+
+
 
 # set variables
 count = 0
